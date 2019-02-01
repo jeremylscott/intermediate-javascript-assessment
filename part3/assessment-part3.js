@@ -8,12 +8,19 @@
 // For this question, you are asked to make a function called 'callBinding'.
 // This function will take in 3 parameters:
 // magicAnimals (Array), updateAnimal (Function), id (Number).
-// Find the animal that matches the given id, then call the update function
+// Find the animal that matches the given id, then call the updateAnimal function
 // with the animal as the context, and 'Trogdor' as a parameter.
 // return the result of your updateAnimal invocation
 
-// CODE HERE...
-
+function callBinding(magicAnimals,updateAnimal,id) {
+    for(let i = 0; i <= magicAnimals; i++) {
+        if(magicAnimals[i] === id) {
+            return {
+                updateAnimal('Trogdor')
+            }
+        }
+    }
+}
 
 
 // *************
@@ -27,8 +34,15 @@
 // with the context of the animal, and the array ['being majestic', 'eating rainbows'] as a parameter.
 // return the result of your updateAnimal invocation
 
-// CODE HERE...
-
+function applyBinding(magicAnimals,updateAnimal,id) {
+    for(let i = 0; i <= magicAnimals; i++) {
+        if(magicAnimals[i] === id) {
+            return {
+                updateAnimal(magicAnimals)
+            }
+        }
+    }
+}
 
 
 // *************
@@ -45,11 +59,12 @@
 // After the timeout is completed, the promise should be resolved with the new updated foo variable.
 // NOTE: Manually invoking your function here will alter the 'foo' variable before tests run, causing them to fail.
 
-var foo;
-
-// CODE HERE...
+// var foo;
 
 
+/// HARD PASS ON THIS QUESTION FOR NOW!!!!!/////
+
+ 
 
 // *************
 // * PROBLEM 4 *
@@ -63,4 +78,4 @@ var foo;
 // Make an array of emails (array of strings) from the returned data (You will need to console log or debug to figure this out),
 // and then resolve the array as you complete your promise.
 
-// CODE HERE...
+/// HARD PASS ON THIS QUESTION FOR NOW!!!!!/////
